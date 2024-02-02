@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termodynamikkens lover</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>luft</p>
+        <div class="varmeElement">
+            <p>jern</p>
+        </div>
+    </div>
+
+    <div class="kontrollere">
+        <p id="resultatText">temperatur til slutt: <span id="resultat">-</span></p>
+        <div class="kolonne">
+            <div>
+                luft masse (kg)
+                <input type="text" onchange="regnut()" id="luftmasse"></input>
+            </div>
+            <div>
+                luft temperatur (°C)
+                <input type="text" onchange="regnut()" id="lufttemperatur"></input>
+            </div>
+        </div>
+        <div class="kolonne">
+            <div>
+                jern masse (kg)
+                <input type="text" onchange="regnut()" id="jernmasse"></input>
+            </div>
+            <div>
+                jern temperatur (°C)
+                <input type="text" onchange="regnut()" id="jerntemperatur"></input>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
